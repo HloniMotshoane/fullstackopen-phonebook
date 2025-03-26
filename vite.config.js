@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: '0.0.0.0',  // Listen on all network interfaces
-    port: 3000,        // You can specify a port if needed
-  },
+    allowedHosts: ['fullstackopen-phonebook-76s1.onrender.com', 'localhost']
+  }
 })
